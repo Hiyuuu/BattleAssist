@@ -18,4 +18,4 @@
 
 ## Licence
 
-BattleAssistは [MIT licence](https://opensource.org/licenses/MIT) になっています。詳しくは [ライセンスファイル](LICENCE) を参照してください。ソフトウェア/ソースのコピーに元の著作権とライセンスの通知を含める限り、自由に行うことができます。
+BattleAssistは [MIT licence](https://opensource.org/licenses/MIT) になっています。詳しくは [ライセンスファイル](https://github.com/riyaya1528/BattleAssist/blob/main/LICENSE) を参照してください。ソフトウェア/ソースのコピーに元の著作権とライセンスの通知を含める限り、自由に行うことができます。
