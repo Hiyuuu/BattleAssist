@@ -1,0 +1,12 @@
+name: BattleAssist
+version: '${project.version}'
+main: net.riyaya.battleassist.BattleAssist
+api-version: 1.16
+commands:
+  battle:
+    description: ""
+permissions:
+  BattleAssist.game.start:
+    default: op
+  BattleAssist.game.stop:
+    default: op

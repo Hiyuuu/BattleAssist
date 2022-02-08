@@ -1,0 +1,83 @@
+#ロビー関係
+lobby:
+
+  #ゲームが終了したら全員テレポートするか
+  teleport-lobby: true
+
+  #ロビーの位置
+  spawn-location:
+    world: world
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0
+    pitch: 0
+
+
+
+#ゲーム関係
+game:
+
+  #スタートする位置
+  start:
+    world: world
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    yaw: 0
+    pitch: 0
+
+  #ゲーム中に死んだらスペクテイターにするか
+  dead-spectator:
+    #有効かどうか
+    enable: true
+    #テレポートされる位置
+    location:
+      world: world
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0
+      pitch: 0
+
+  #試合開始後にエリトラがすべてのプレイヤーから削除される秒数
+  remove-elytra-seconds: 20
+
+#ワールドボーダー関係
+world-border:
+
+  #最大サイズ
+  max-size: 100
+
+  #ボーダーがゲームスタート時から収縮を始める秒数
+  border-shrinkage-start-seconds: 20
+
+  #第一収縮
+  first-size:
+    #収縮にかかる時間
+    seconds: 10
+    #収縮後に待機する時間
+    wait-seconds: 10
+    #収縮するサイズ
+    size: 30
+
+  #第二収縮
+  second-size:
+    #収縮にかかる時間
+    seconds: 10
+    #収縮後に待機する時間
+    wait-seconds: 10
+    #収縮するサイズ
+    size: 20
+
+  #第三収縮
+  third-size:
+    #収縮にかかる時間
+    seconds: 10
+    #収縮後に待機する時間
+    wait-seconds: 10
+    #収縮するサイズ
+    size: 10
+
+
+notice: false
