@@ -71,11 +71,7 @@ public final class BattleAssist extends JavaPlugin {
                         player.sendActionBar(ChatColor.YELLOW + "§l残り人数" + ChatColor.WHITE + ": " + ChatColor.YELLOW + "§l" + players.size() + ChatColor.GREEN + "§l 残り時間" + ChatColor.WHITE + ": " + ChatColor.GREEN + "§l" + gameStatus.getTime());
                     }
 
-                    if(players.size() <= 1) {
-                        stop();
-                    }
-
-                    if(gameStatus.getTime() == 0) {
+                    if(players.size() <= 1 || gameStatus.getTime() == 0) {
                         stop();
                     }
 
@@ -190,6 +186,8 @@ public final class BattleAssist extends JavaPlugin {
             }
         }
 
+        Bukkit.broadcastMessage(PLAYING.get(0).getDisplayName());
+
         for (Player player : Bukkit.getOnlinePlayers()) {
             try {
                 player.sendTitle(ChatColor.GOLD + "§l試合終了～", ChatColor.GREEN + "§lビクトリ : " + PLAYING.get(0).getDisplayName());
@@ -198,13 +196,13 @@ public final class BattleAssist extends JavaPlugin {
             }
         }
 
-            for(Player player : Bukkit.getOnlinePlayers()) {
-                if (config.isAllowTeleportLobby()) {
-                    player.teleport(config.getSpawnLocation());
-                }
-                player.setGameMode(GameMode.SURVIVAL);
-                player.getInventory().clear();
-                player.playSound(player.getLocation(), Sound.ENTITY_ENDER_DRAGON_DEATH, 10, 2);
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            if (config.isAllowTeleportLobby()) {
+                player.teleport(config.getSpawnLocation());
+            }
+            player.setGameMode(GameMode.SURVIVAL);
+            player.getInventory().clear();
+            player.playSound(player.getLocation(), Sound.ENTITY_ENDER_DRAGON_DEATH, 10, 2);
         }
     }
 
