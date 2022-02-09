@@ -22,7 +22,7 @@ public class PlayerJoinListener implements Listener {
         if(!event.getPlayer().isOp()) {
             return;
         }
-        event.getPlayer().sendMessage(ChatColor.GREEN + "§lこのプラグインを利用していただきありがとうございます");
-        event.getPlayer().sendMessage(ChatColor.YELLOW + "§lバグや不具合等がありましたらTwitterでの@riyaya1528に連絡をください");
+        event.getPlayer().sendMessage(ChatColor.GREEN + "§l[BattleAssist] このプラグインを利用していただきありがとうございます");
+        event.getPlayer().sendMessage(ChatColor.YELLOW + "§l[BattleAssist] バグや不具合等がありましたらTwitterでの@riyaya1528に連絡をください");
     }
 }
