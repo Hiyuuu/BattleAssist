@@ -186,8 +186,6 @@ public final class BattleAssist extends JavaPlugin {
             }
         }
 
-        Bukkit.broadcastMessage(PLAYING.get(0).getDisplayName());
-
         for (Player player : Bukkit.getOnlinePlayers()) {
             try {
                 player.sendTitle(ChatColor.GOLD + "§l試合終了～", ChatColor.GREEN + "§lビクトリ : " + PLAYING.get(0).getDisplayName());
