@@ -12,9 +12,9 @@
 
 ## コマンド
 
-`/start`   ゲームを開始します
+`/battle start`   ゲームを開始します
 
-`/stop` ゲームを終了します
+`/battle stop` ゲームを終了します
 
 ## Licence
 
